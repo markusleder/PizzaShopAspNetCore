@@ -1,0 +1,40 @@
+﻿<div class="container-fluid">
+<div class="row">
+    <h2>Pizza Menu</h2>
+
+    <div class="col-md-6">
+        <ul>
+            <li *ngFor="let pizza of pizzas">
+                <div class="panel panel-info">
+                    <div class="panel-heading"><b>{{pizza.name}}</b></div>
+                    <div class="panel-body">
+                        {{pizza.price | currency : "CHF"}}
+                        <button type="button" class="btn btn-default" (click)="addPizza(pizza)">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                </div>
+                                <div class="col-md-3">
+                                    <div>Add to Cart</div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-md-6">
+        <div class="panel panel-info">
+            <div class="panel-heading"><b>Orders</b></div>
+            <div class="panel-body">
+                ...my oders ...
+            </div>
+
+            That's all we have! Enjoy!!!
+        </div>
+    </div>
+</div>
+
+

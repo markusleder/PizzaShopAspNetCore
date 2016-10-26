@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+    <title>Angular 2 Demo</title>
+    <base href="/"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="libs/styles/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- 1. Load libraries -->
+    <script src="libs/scripts/jquery/dist/jquery.min.js"></script>
+    <script src="libs/scripts/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Polyfill(s) for older browsers -->
+    <script src="libs/scripts/core-js/client/shim.min.js"></script>
+    <script src="libs/scripts/zone.js/dist/zone.js"></script>
+    <script src="libs/scripts/reflect-metadata/Reflect.js"></script>
+    <script src="libs/scripts/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app/boot').catch(function (err)
+        {
+            console.error(err);
+        });
+    </script>
+</head>
+<!-- 3. Display the application -->
+<body>
+    <pizzashop-app>Loading lem's awesome PizzaShop web application...</pizzashop-app>
+</body>
+</html>

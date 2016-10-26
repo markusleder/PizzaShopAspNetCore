@@ -1,0 +1,14 @@
+**/bin/debug
+**/bin/release
+**/obj/debu
+**/obj/release
+**/node_modules
+PizzaShopAngular2/system-config.js*
+PizzaShopAngular2/app/**/*.js
+app/**/*.map
+node_modules
+jspm_packages
+bower_components
+aot/*
+dist/*
+yarn.lock
